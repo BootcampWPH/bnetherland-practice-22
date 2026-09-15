@@ -8,8 +8,6 @@ type Props = {
   onSubmit: (payload: LoginPayload) => void
 }
 
-// Komponen ini hanya mengurus tampilan dan validasi ringan.
-// Request login nanti ditulis di lesson 08 atau file API saat live coding.
 export default function SocialityLoginForm({ isPending, errorMessage, onSubmit }: Props) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

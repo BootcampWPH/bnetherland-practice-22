@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { login } from '../api/socialityApi'
 import type { SocialSession } from '../types/sociality'
 
-// Disiapkan mentor: autentikasi pendukung, bukan fokus live coding lesson 08.
 export default function SocialityLogin({
   onLogin,
 }: {

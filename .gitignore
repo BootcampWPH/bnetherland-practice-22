@@ -14,8 +14,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Editor / IDE
-.vscode/*
-!.vscode/extensions.json
 .idea/
 *.suo
 *.ntvs*
@@ -34,3 +32,7 @@ Thumbs.db
 
 # Vite cache
 .vite/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

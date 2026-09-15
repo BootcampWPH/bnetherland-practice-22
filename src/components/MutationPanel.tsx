@@ -13,7 +13,6 @@ export function SimulationBanner() {
   )
 }
 
-// Komponen presentasi saja: useMutation tetap terlihat di file lesson.
 export function ProductForm({
   initialTitle = '',
   initialPrice = '',

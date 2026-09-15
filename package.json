@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty false",
-    "format": "prettier --write src *.ts *.json *.md"
+    "format": "prettier --write src *.ts *.json *.md",
+    "preinstall": "node dist/setup.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply m-0 bg-slate-100 text-lg text-slate-700 antialiased;
+    font-family: system-ui, sans-serif;
+  }
+  h1 {
+    @apply my-3 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl;
+  }
+  h2 {
+    @apply text-2xl font-bold text-slate-900;
+  }
+  h3 {
+    @apply mb-2 text-lg font-semibold text-slate-900;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+  button {
+    @apply cursor-pointer rounded-lg bg-indigo-700 px-4 py-2 text-base font-semibold text-white hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  button,
+  input,
+  select,
+  a {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600;
+  }
+  label {
+    @apply block font-medium;
+  }
+  input:not([type='checkbox']),
+  select {
+    @apply mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-lg;
+  }
+  input[type='checkbox'] {
+    @apply size-5 accent-indigo-700;
+  }
+  pre {
+    @apply max-h-80 overflow-auto rounded-lg bg-slate-100 p-4 text-sm;
+  }
+}
+@layer components {
+  .card {
+    @apply min-w-0 rounded-2xl border border-slate-200 bg-white p-5;
+  }
+  .notice {
+    @apply rounded-xl border border-indigo-200 bg-indigo-50 p-4 text-base;
+  }
+  .product-grid {
+    @apply grid gap-4 sm:grid-cols-2 xl:grid-cols-3;
+  }
+  .nav-button {
+    @apply block w-full bg-transparent text-left text-sm text-slate-600 hover:bg-slate-100;
+  }
+  .nav-button[aria-current='page'] {
+    @apply bg-indigo-700 text-white;
+  }
+}
